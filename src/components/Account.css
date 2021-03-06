@@ -34,3 +34,19 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 768px) {
+    .accounts_avatar {
+        width: 20%;
+    }
+
+    .accounts_title {
+        margin-left: 10px;
+    }
+
+    .container_hide {
+        display: none !important;
+        transition: 3s all ease-out;
+    }
+}
