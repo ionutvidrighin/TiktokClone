@@ -7,6 +7,10 @@ function Nav() {
         <div className="nav">
             <img className="tiktok_logo" src={TikTokLogo} alt="tiktok"/>
             <div></div>
+            <div>
+            <p>React App built by</p>
+            <p style={{fontStyle: "italic", color: 'grey'}}>Ionut Vidrighin</p>
+            </div>
         </div>
     )
 }

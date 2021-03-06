@@ -30,12 +30,13 @@
 }
 
 .footer_ticker > .ticker {
-    height: fit-content;
+   /* height: fit-content; */
     width: 50%;
     margin-left: 5px;
     color: white;
-    display: inline;
     font-family: 'Shippori Mincho', serif;
+    font-style: italic;
+    font-size: 13px;
 }
 
 .icon {

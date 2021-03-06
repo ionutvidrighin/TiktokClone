@@ -4,11 +4,21 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .nav > img {
     width: auto;
     height: auto;
     margin-right: 5rem;
+}
+
+.nav > :nth-child(3) {
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
