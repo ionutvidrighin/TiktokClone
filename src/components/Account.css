@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+.accounts__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+ .accounts_avatar,
+  .accounts_title {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Shippori Mincho B1', serif;
+} 
+
+.accounts_title {
+    margin-left: 20px;
+}
+
+.accounts_title > p {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.accounts_title > p:hover {
+    font-size: 14.5px;
+}
+
+.accounts_avatar > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
