@@ -9,6 +9,7 @@ import './App.css';
 function App() {
 
   const [videos, setVideos] = useState([]);
+  const [menu, setMenu] = useState(false);
 
   useEffect( ()=> {
     async function fetchData() {
@@ -23,10 +24,10 @@ function App() {
 
   return (
     <div>
-      <Nav />
+      <Nav menu={menu} setMenu={setMenu}/>
         <div className="app">
-            <Accounts />
-            <div className="container">
+            <Accounts  menu={menu} setMenu={setMenu} />
+            <div className={ `container ${menu ? 'container_hide' : ''}` }>
                 {videos.map( 
                   ({channel, description, likes, messages, shares, song, url, _id}) => (
                     <Video 

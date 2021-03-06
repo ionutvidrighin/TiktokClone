@@ -51,3 +51,16 @@
     font-family: 'Shippori Mincho B1', serif;
     color: rgba(22,24,35,0.75);
 }
+
+@media screen and (max-width: 768px) {
+    .accounts_section {
+        display: none;
+    } 
+    
+    .accounts_section_show {
+        width: 50%;
+        position: absolute;
+        left: 5%;
+        display: block !important;
+    }
+}

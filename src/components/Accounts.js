@@ -4,9 +4,10 @@ import Account from './Account';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import SupervisorAccountOutlinedIcon from '@material-ui/icons/SupervisorAccountOutlined';
 
-function Accounts() {
+function Accounts({menu}) {
+   
     return (
-        <div className="accounts_section">
+        <div className={`accounts_section ${menu ? 'accounts_section_show' : ''}`}>
             <div className="top">
                 <div>
                     <HomeRoundedIcon fontSize="large" className="home"/> <p id="for_you">For You</p>
@@ -27,4 +28,4 @@ function Accounts() {
     )
 }
 
-export default Accounts
+export default Accounts;
