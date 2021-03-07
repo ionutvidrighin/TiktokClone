@@ -4,11 +4,12 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-left: auto;
     position: relative;
 }
 
-.nav > div:nth-child(1) {
+.nav > .menu {
     height: 100%;
     width: 10%;
     display: flex;
@@ -18,13 +19,8 @@
     cursor: pointer;
 }
 
-.line {
-    width: 35px;
-    height: 4px;
-    background-color: black;
-    margin: 3px;
-    border-radius: 5px;
-    display: none;
+.nav > .menu > img {
+    opacity: 0;
 }
 
 .nav > div:nth-child(2) {
@@ -48,9 +44,31 @@
 
 
 @media screen and (max-width: 768px) {
+    .nav > .menu > img {
+        width: 70%;
+        height: 85%;
+        opacity: 1;
+    }
+
     .line {
         display: block;
-        margin-left: 10px;
+    }
+
+    .nav > .tiktok_logo {
+        width: 50% !important;
+        height: 50% !important;
+    }
+
+    .nav > div:nth-child(1) {
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 6px;
+        height: 65%;
+        width: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
     }
 
     .nav > div:nth-child(2) {
@@ -61,4 +79,14 @@
         width: 25%;
     }
 
+    .nav > div > .logo {
+        width: 80px;
+        height: 80px;
+    }
 }
+
+/* 
+    <div className="line"></div>
+    <div className="line"></div>
+    <div className="line"></div> 
+*/
