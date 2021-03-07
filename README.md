@@ -1,1 +1,1 @@
-TikTok Clone built with React
+TikTok Clone built with React, deployed on Netlify
