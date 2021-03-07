@@ -6,6 +6,7 @@
     bottom: 160px;
     margin-left: 15px;
     display: flex;
+    width: 80%;
 }
 
 .footer_content {
@@ -20,4 +21,14 @@
 .footer_content > h3 {
     font-family: 'Varela Round', sans-serif;
     font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_content > h3 {
+        font-size: 15px;
+    }
+
+    .footer_content > p {
+        font-size: 14px;
+    }
 }
